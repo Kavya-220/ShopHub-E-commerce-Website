@@ -1,0 +1,179 @@
+/* NavBar.css */
+
+.navbar-nav .nav-link {
+  color: #4e4e4e !important;
+  transition: 0.3s;
+  font-weight: 600;
+  }
+  
+  .navbar-nav .nav-link.active {
+  color: tomato !important;
+  border-bottom: 2px solid tomato;
+  }
+  
+  .nav-cart-count {
+  width: 20px;
+  height: 20px;
+  border-radius: 11px;
+  font-size: 14px;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 95px;
+  top: 18px;
+  position: absolute;
+  }
+  
+  .searchBox {
+  position: absolute;
+  background: white;
+  height: 40px;
+  border-radius: 40px;
+  }
+  
+  .searchBox:hover > .searchInput {
+  width: 100px;
+    }
+  .searchButton {
+    float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  border: none;
+  outline: none;
+  }
+  
+  .searchInput {
+    border:none;
+    background: none;
+    outline:none;
+    float:left;
+    padding: 0;
+    color: black;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+
+}
+
+  
+  @media (max-width: 991px) {
+  .navbar-nav {
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  background-color: #fff; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  }
+  .navbar-brand img{
+  width: 40px;
+  height: 40px;
+  }
+  .navbar-brand span{
+  font-size: 14px;
+  }
+  .navbar>.container-fluid{
+  flex-wrap: nowrap !important;
+  }
+  .nav-cart-count {
+      right: 160px;
+      top: 11px;
+    }
+  
+  .searchBox:hover > .searchInput {
+  width: 100px;
+  padding: 0 4px;
+  }
+  .navbar-nav.show {
+  display: flex;
+  }
+  .navbar-nav .nav-item {
+         text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd; /* Add border between items */
+  }
+    
+  .icon{
+    order: 3; /* Ensure toggle button is first */
+  }  
+  .searchBox {
+    order: 1; /* Ensure search form is third */
+    margin-right: 0; /* Center align on smaller screens */
+  }
+  
+  .cart{
+    order: 2; /* Ensure cart and login are last */
+   
+      }
+  
+  .nav-link {
+    color: #4e4e4e !important;
+    margin-right: 15px; /* Add margin between items */
+  }
+  }
+  @media (max-width: 500px) {
+  div.top-boxes{
+  margin-right: 0 !important;
+  }
+  .cart-items img{
+  margin-right: 3px !important;
+  }
+  .nav-cart-count {
+    right: 140px;
+    top: 11px;
+  }
+  .cart img{
+  width: 20px;
+  height: 20px;
+  }
+  .searchBox img{
+  width: 20px;
+  height: 20px;
+  }
+  .navbar-toggler{
+  border: none;
+  outline: none;
+  }
+  
+  }
+  @media (max-width: 450px) {
+  .cart img{
+  width: 17px;
+  height: 17px;
+  }
+  .nav-link {
+    margin-right: 2px !important;
+  }
+  .searchButton{
+    margin-right: 0 !important;
+  }
+  .nav-cart-count {
+    right: 83px !important;
+    top: 10px;
+  }
+  .searchBox img{
+  width: 17px;
+  height: 17px;
+  }
+  button.navabr-toggle.icon {
+  width: 17px;
+  }
+  .navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .navbar-toggler:hover {
+    background-color: transparent !important; /* Remove hover effect */
+  }
+  } 

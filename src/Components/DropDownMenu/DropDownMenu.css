@@ -1,0 +1,14 @@
+/* Ensuring the dropdown menu items have the desired styles */
+.dropdown-menu li {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+/* Targeting the input fields directly to remove default hover effect */
+.form-control:hover,
+.form-control:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: initial !important;
+}
